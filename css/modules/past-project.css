@@ -1,0 +1,118 @@
+
+
+.past-project .past-project-top{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.past-project .past-project-top .past-project-title{
+    max-width: 605px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.past-project .past-project-top .past-project-subtitle{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.past-project .past-project-top .past-project-buttons{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.past-project .past-project-slider{
+    gap: 64px;
+    margin-bottom: 378px;
+    margin-top: 64px;
+}
+
+.past-project .past-project-slider .past-project-slide{
+    width: 545px;
+    height: 611px;
+    margin-right: 64px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.past-project .past-project-slider .slide-1{
+    background: url('../../img/slide-img-1.png') center center / cover no-repeat;
+    width: 545px;
+}
+.past-project .past-project-slider .slide-2{
+    background: url('../../img/slide-img-2.png') center center / cover no-repeat;
+}
+.past-project .past-project-slider .slide-3{
+    background: url('../../img/slide-img-3.png') center center / cover no-repeat;
+}
+.past-project .past-project-slider .slide-4{
+    background: url('../../img/slide-img-4.png') center center / cover no-repeat;
+}
+.past-project .past-project-slider .slide-5{
+    background: url('../../img/slide-img-5.png') center center / cover no-repeat;
+}
+.past-project .past-project-slider .slide-6{
+    background: url('../../img/slide-img-6.png') center center / cover no-repeat;
+}
+.past-project .past-project-slider .slide-7{
+    background: url('../../img/slide-img-7.png') center center / cover no-repeat;
+}
+.past-project .past-project-slider .slide-8{
+    background: url('../../img/slide-img-8.png') center center / cover no-repeat;
+}
+.past-project .past-project-slider .slide-9{
+    background: url('../../img/slide-img-9.png') center center / cover no-repeat;
+}
+
+
+.past-project .past-project-slider .past-project-slide .slide-title{
+    font-size: var(--font-size-34);
+    color: var(--text-color-100);
+}
+
+.past-project .past-project-slider .past-project-slide .slide-descr{
+    color: var(--text-color-500);
+    margin-top: 16px;
+}
+
+.past-project .past-project-slider .past-project-slide .slide-hr{
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    background: var(--bg-color-1000);
+    border: none;
+    margin-top: 43px;
+}
+
+.past-project .past-project-slider .past-project-slide .slide-bottom{
+    display: flex;
+    color: var(--text-color-500);
+    font-family: 'Barlow', sans-serif;
+    align-items: center;
+    font-size: var(--font-size-18);
+    margin-top: 30px;
+    gap: 10px;
+}
+
+
+@media (max-width: 1000px) {
+    .past-project .past-project-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .past-project .past-project-top .past-project-buttons{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .past-project .past-project-slider .past-project-slide{
+        margin: 0 32px;
+    }
+    
+}

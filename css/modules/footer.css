@@ -1,0 +1,149 @@
+.footer{
+    background: var(--bg-color-900);
+    padding: 120px 0 40px 0;
+    color: var(--text-color-100);
+    font-family: 'Barlow', sans-serif;
+    margin-top: 75px;
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+}
+
+.footer .footer-social .social-text{
+    font-size: var(--font-size-18);
+    font-family: 'Barlow', sans-serif;
+    max-width: 175px;
+}
+
+.footer .footer-social .social-icons{
+    display: flex;
+    gap: 16px;
+    margin-top: 35px;
+}
+
+.footer .footer-social .social-icons div{
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg-color-100);
+}
+
+.footer  .footer-title{
+    font-size: var(--font-size-22);
+    color: var(--text-color-100);
+    margin-bottom: 40px;
+}
+
+.footer .footer-menu .list{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6, 20px) ;
+    row-gap: 17px;
+}
+
+.footer .link{
+    text-decoration: none;
+    font-size: var(--font-size-18);
+    color: var(--text-color-100);
+}
+
+.footer .footer-link{
+    transition: all .1s;
+}
+
+.footer .footer-link:hover{
+    color: var(--text-color-300);
+}
+
+.footer .utility-pages .list{
+    display: grid;
+    row-gap: 17px;
+}
+
+.footer .footer-contact .contact-method{
+    display: grid;
+    row-gap: 18px;
+}
+
+.footer .footer-contact .contact-method .contact-block{
+    padding: 29px 27px 29px 27px;
+    border: 2px solid var(--bg-color-100);
+    max-width: 290px;
+    display: grid;
+    grid-template-columns: 48px auto;
+    gap: 16px;
+}
+
+.footer .footer-contact .contact-method .contact-block .contact-img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg-color-100);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-contact .contact-method .contact-block .contact-us{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.footer .footer-contact .contact-method .contact-block .contact-through{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.footer .subfooter .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 130px;
+}
+
+.footer .subfooter .subfooter-copyright{
+    color: var(--text-color-400);
+}
+
+.footer .subfooter .product-by span{
+    color: var(--text-color-300);
+}
+
+@media (max-width: 991px){
+    .footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer-title{
+        text-align:center;
+    }
+    .footer .footer-social{
+        margin-bottom: 30px;
+    }
+    .footer .footerlink{
+        font-size: var(--font-size-16);
+    }
+    .footer .footer-nav{
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+        border-top: 2px solid var(--bg-color-100);
+    }
+    .footer .footer-nav:nth-child(3){
+        border-bottom: 2px solid var(--bg-color-100);
+    }
+    .footer .footer-nav:hover{
+        background-color: var(--bg-color-100);
+    }
+    .footer .footer-nav .footer-title{
+        margin-bottom: 0;
+    }
+    .footer .footer-nav .list {
+        display: none;
+    }
+    .footer .footer-contact{
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,129 @@
+.about-us{
+    margin-top: 144px;
+}
+
+.about-us .container{
+    display: grid;
+    grid-template-columns: 500px 600px;
+    grid-template-rows: auto auto auto;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.about-us .about-us-img{
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.about-us .about-us-img img{
+    width: 100%;
+}
+
+.about-us .about-us-info-top{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.about-us .about-us-info-bottom{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.about-us .about-us-body{
+    max-width: 596px;
+}
+
+.about-us .about-us-info-top .about-us-title{
+    max-width: 522px;
+    margin-top: 15px;
+}
+
+.about-us .about-us-info-bottom .about-us-achievements{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 57px;
+}
+
+.about-us .about-us-info-bottom .about-us-achievements .achievement-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us .about-us-info-bottom .about-us-achievements .achievement-projects .achievement-score{
+    font-size: var(--font-size-72);
+    font-family: 'Barlow', sans-serif;
+}
+
+.about-us .about-us-info-bottom .about-us-achievements .achievement-projects .achievement-score span{
+    color: var(--text-color-300);
+    font-size: var(--font-size-72);
+}
+
+.about-us .about-us-info-bottom .about-us-achievements .achievement-projects .achievement-name{
+    color: var(--text-color-400);
+    margin-top: 2px;
+    font-size: var(--font-size-18);
+    font-family: 'Barlow', sans-serif;
+}
+
+.about-us .about-us-info-bottom .about-us-button{
+    display: block;
+    margin-top: 48px;
+}
+
+@media (max-width: 1100px){
+    .about-us .container{
+        grid-template-columns: minmax(100px, 600px );
+        justify-content: center;
+        align-items: center;
+    }
+    .about-us .about-us-info-top{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .about-us .about-us-img{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .about-us .about-us-info-bottom{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .about-us .about-us-info-top .about-us-subtitle{
+        text-align: center;
+    }
+    .about-us .about-us-info-top .about-us-title{
+        text-align: center;
+        font-size: var(--font-size-40);
+        margin: 0 auto;
+    }
+    .about-us .about-us-img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .about-us .about-us-info-bottom .about-us-descr{
+        text-align: center;
+    }
+    .about-us .about-us-info-bottom .about-us-button{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:576px) {
+    
+    .about-us .about-us-info-bottom .about-us-achievements .achievement-projects .achievement-score{
+        font-size: var(--font-size-40);
+    }
+
+    .about-us .about-us-info-bottom .about-us-achievements .achievement-projects .achievement-score span{
+        font-size: var(--font-size-40);
+    }
+
+    .about-us .about-us-info-bottom .about-us-achievements .achievement-projects .achievement-name{
+        font-size: var(--font-size-15);
+    }    
+}

@@ -1,0 +1,88 @@
+.our-services{
+    padding: 300px 0;
+}
+
+.our-services .our-services-top{
+    display: grid;
+    grid-template-rows: none ;
+    grid-template-columns: auto ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-services .our-services-title .our-services-subtitle{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.our-services .our-services-top .our-services-title{
+    max-width: 416px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.our-services .our-services-top .our-services-buttons{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    gap: 28px;
+}
+
+.our-services .our-services-body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 364px));
+    justify-content: center;
+    margin-top: 64px;
+    row-gap: 80px;
+}
+
+.our-services .our-services-body .service-block .service-title{
+    font-size: var(--font-size-34);
+    line-height: 141%;
+    margin-top: 30px;
+}
+
+.our-services .our-services-body .service-block .service-descr{
+    margin-top: 15px;
+}
+
+.our-services .our-services-body .service-block .service-link{
+    color: var(--text-color-200);
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: var(--font-size-18);
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.our-services .our-services-body .service-block .service-link .link-square{
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg-color-700);
+}
+
+@media (max-width:860px) {
+    .our-services .our-services-top{
+        grid-template-columns: auto;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .our-services .our-services-top .our-services-subtitle{
+        text-align: center;
+    }
+    .our-services .our-services-top .our-services-title{
+        text-align: center;
+    }
+
+    .our-services .our-services-top .our-services-buttons{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
+@media (max-width: 576px) {
+    .our-services .our-services-top .our-services-buttons{
+        justify-content: center;   
+    }
+}

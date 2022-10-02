@@ -1,0 +1,18 @@
+.ready{
+    display: block;
+    background: url('../../img/ready.jpg') center center / cover no-repeat; 
+    padding: 115px 0;
+}
+
+.ready .ready-title{
+    max-width: 605px;
+}
+
+.ready .ready-descr{
+    max-width: 575px;
+    margin-top: 20px;
+}
+
+.ready .ready-buttons{
+    margin-top: 35px;
+}

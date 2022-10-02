@@ -1,0 +1,54 @@
+.slick-next{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    bottom: -135px;
+    background: var(--bg-color-100);
+    border: none;
+    transform: translateX(50%);
+    left: calc(50%);
+}
+.slick-prev{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    bottom: -135px; 
+    background: var(--bg-color-300);
+    border: 2px solid var(--bg-color-900);
+    transform: translateX(-50%);
+    right: calc(50%);
+}
+
+.slick-next-2{
+    position: absolute;
+    top: -200px;
+    right: 24px;
+    width: 72px;
+    height: 72px;
+    background: var(--bg-color-100);
+    border: none;
+}
+
+.slick-prev-2{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    top: -200px;
+    right: 122px;
+    background: var(--bg-color-300);
+    border: 2px solid var(--bg-color-900);
+}
+
+@media (max-width: 767px ) {
+    .slick-next-2{
+        top: -140px;
+        left: 50%;
+        transform: translateX(50%);
+    }
+    .slick-prev-2{
+        top: -140px;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+    
+}

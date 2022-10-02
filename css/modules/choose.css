@@ -1,0 +1,120 @@
+.choose{
+    position: relative;
+}
+
+.choose .choose-decor-img{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.choose .choose-decor-img img{
+    width: 100%;
+}
+
+.choose .container{
+    padding: 300px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 535px);
+    align-items: center;
+    row-gap: 100px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.choose .choose-img.img-before::before{
+    width: 250px;
+    height: 250px;
+} 
+
+.choose .choose-img{
+    max-width: 534px;
+    position: relative;
+}
+
+.choose .choose-img img{
+    width: 100%;
+}
+
+.choose .choose-body .choose-title-1{
+    margin-top: 15px;
+    max-width: 475px;
+}
+.choose .choose-body .choose-title-2{
+    max-width: 525px;
+}
+
+.choose .choose-body .choose-descr{
+    margin-top: 19px;
+}
+.choose .choose-body .choose-descr-1{
+    max-width: 530px;
+}
+.choose .choose-body .choose-descr-2{
+    max-width: 510px;
+}
+
+.choose .choose-body .choose-checked{
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+
+    height: 97px;
+    justify-content: space-between;
+}
+
+.choose .choose-body .choose-checked div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Barlow', sans-serif;
+    font-size: var(--font-size-18);
+}
+
+.choose .choose-body .choose-achievements {
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+}
+
+.choose .choose-body .choose-achievements .achievement-choose .achievement-score{
+    font-family: 'Barlow', sans-serif;
+    font-size: var(--font-size-54);
+    display: flex;
+    align-items: center;
+}
+
+.choose .choose-body .choose-achievements .achievement-choose .achievement-score span{
+    color: var(--text-color-300);
+}
+
+.choose .choose-body .choose-achievements .achievement-choose .achievement-name{
+    color: var(--text-color-400);
+    margin-top: 2px;
+    font-size: var(--font-size-18);
+    font-family: 'Barlow', sans-serif;
+}
+
+@media (max-width: 1090px) {
+    .choose .container{
+        justify-content: center;
+        row-gap: 100px;
+    }
+    .choose .choose-body-1{
+        grid-row: 1/2;
+    }
+    .choose .choose-body .choose-title{
+        text-align: center;
+    }
+    .choose .choose-body .choose-descr{
+        text-align: center;
+    }
+    .choose .choose-body .choose-checked{
+        align-items: center;
+    }
+    .choose .choose-body .choose-achievements{
+        justify-content: center;
+    }
+}
+

@@ -1,0 +1,83 @@
+.testimonials{
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 177px;
+}
+
+.testimonials .testimonials-top .testimonials-title{
+    max-width: 530px;
+}
+
+
+.testimonials .testimonials-slider .slider-content{
+    display: flex;
+    margin: 0 32px;
+    gap: 38px;
+    align-items: center;
+}
+
+
+.testimonials .testimonials-slider{
+    margin-top: 108px;
+}
+
+.testimonials .testimonials-slider .slide-content .slide-title{
+    font-size: var(--font-size-28);
+    max-width: 300px;
+}
+
+.testimonials .testimonials-slider .slider-content .slide-content .slide-descr{
+    color: var(--text-color-400);
+    max-width: 360px;
+    margin-top: 13px;
+}
+
+.testimonials .testimonials-slider .slide-content .slide-person-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+}
+
+.testimonials .testimonials-slider .slider-content .slide-person-info .person-info .person-info-city{
+    text-transform: uppercase;
+    color: var(--text-color-400);
+    font-size: var(--font-size-14);
+    margin-top: 6px;
+}
+
+.testimonials .testimonials-slider .slide-content .slide-person-info .person-info-square{
+    width: 32px;
+    height: 32px;
+    background: var(--bg-color-100);
+}
+@media (max-width: 767px) {
+    .testimonials .testimonials-slider .slider-content .testimonials-slide-img{
+        width: 200px;
+    }
+    .testimonials .testimonials-slider .slider-content .slide-title{
+        font-size: var(--font-size-18);
+    }
+    .testimonials .testimonials-slider .slider-content .slide-descr{
+        font-size: var(--font-size-14);
+    }
+    .testimonials .testimonials-title{
+        margin: 0 auto;
+        margin-bottom: 170px;
+        text-align: center;
+        display: block;
+    }
+    .testimonials .testimonials-subtitle{
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .testimonials .testimonials-slider .slider-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials{
+        text-align: center;
+    }
+    
+}
