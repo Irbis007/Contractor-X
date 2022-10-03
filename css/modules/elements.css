@@ -68,9 +68,6 @@
     position: relative;
 }
 
-.img-before-bottom{
-    position: relative;
-}
 
 .img-before-bottom::after{
     content: '';
@@ -78,8 +75,8 @@
     width: 284px;
     height: 284px;
     border: 3px solid var(--bg-color-100);
-    top: 267px;
-    left:  264px;
+    bottom: -20px;
+    right:  -20px;
 }
 
 @media (max-width:576px) {
@@ -93,11 +90,12 @@
     .descr{
         font-size: var(--font-size-16);
     }
-    .img-before-bottom:before{
-        display: none;
-    }
     .img-before::before{
         display: none;
     }
+    .img-before-bottom::after{
+        display: none;
+    }
+
     
 }
