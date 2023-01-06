@@ -73,6 +73,7 @@
         height: 1;
         background-color: var(--bg-color-600);
         transition: all .3s;
+        z-index: 100;
     }
     .header .header-nav .list {
         flex-direction: column;
