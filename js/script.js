@@ -2,9 +2,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     const menu = document.querySelector('.header-nav')
     const menuBtn = document.querySelector('.menu-toggle')
+    const body = document.querySelector('body')
 
     menuBtn.addEventListener('click', ()=>{
-        menu.classList.toggle('active')
+        menu.classList.toggle('active');
+        menuBtn.classList.toggle('active');
+        body.classList.toggle('active');
     })
 
     $('.past-project-slider').slick({
