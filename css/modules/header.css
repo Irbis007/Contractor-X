@@ -23,6 +23,11 @@
     font-family: 'Barlow', sans-serif;
     text-decoration: none;
     font-size: var(--font-size-18);
+    transition: all .1s;
+}
+
+.header .cart a:hover{
+    color: var(--text-color-300);
 }
 
 .header .header-nav .list .item .link{
@@ -30,8 +35,12 @@
     font-family: 'Barlow', sans-serif;
     text-decoration: none;
     font-size: var(--font-size-18);
+    transition: all .1s;
 }
 
+.header .header-nav .list .item .link:hover{
+    color: var(--text-color-300);
+}
 
 .header-button{
     padding: 18px 24px;
