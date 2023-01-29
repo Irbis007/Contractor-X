@@ -36,6 +36,16 @@
     row-gap: 80px;
 }
 
+.our-services .our-services-body .service-block .service-img{
+    height: 70px;
+    width: 70px;
+}
+
+.our-services .our-services-body .service-block .service-img img {
+    height: 100%;
+    width: 100%;
+}
+
 .our-services .our-services-body .service-block .service-title{
     font-size: var(--font-size-34);
     line-height: 141%;
