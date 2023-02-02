@@ -1,0 +1,54 @@
+
+.text-animation{
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.animation-class.text-animation{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all .3s;
+}
+
+.img-scroll{
+    transform: translate(-60px, 100px);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.animation-class.img-scroll{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all .3s;
+}
+
+.button-animation{
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.animation-class.button-animation{
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all .3s;
+}
+
+.item-animation, .item-animation:nth-child(4){
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all .3s;
+}
+.item-animation:nth-child(2), .item-animation:nth-child(5){
+    transition: all .6s;
+}
+.item-animation:nth-child(3), .item-animation:nth-child(6){
+    transition: all .9s;
+}
+
+.animation-class.item-animation{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all .3;
+}

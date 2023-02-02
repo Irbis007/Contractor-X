@@ -89,4 +89,39 @@ document.addEventListener('DOMContentLoaded', ()=>{
         } )
     })
           
+    // SCROLL ANIMATION
+  const scrollItems = document.querySelectorAll('.scroll-item');
+
+  const scrollAnimation = () => {
+    let windowCenter = (window.innerHeight / 2) + window.scrollY;
+    scrollItems.forEach(el => {
+      let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
+      if (windowCenter >= scrollOffset) {
+        el.classList.add('animation-class');
+      } else {
+        el.classList.remove('animation-class');
+      }
+    });
+  };
+
+    const imgScroll = document.querySelectorAll('.img-scroll')
+
+    const scrollAnimationImg = () =>{
+    let windowCenter = (window.innerHeight / 2) + window.scrollY;
+    imgScroll.forEach(el => {
+      let scrollOffset = el.offsetTop;
+      if (windowCenter >= scrollOffset) {
+        el.classList.add('animation-class');
+      } else {
+        el.classList.remove('animation-class');
+      }
+    });
+    }
+
+  scrollAnimation();
+  window.addEventListener('scroll', () => {
+    scrollAnimation();
+        scrollAnimationImg();
+  });
+  
 })

@@ -15,6 +15,7 @@
 @import url('modules/slide-arrows.css');
 @import url('modules/testimonials.css');
 @import url('modules/blog.css');
+@import url('modules/animation.css');
 
 *{
     box-sizing: border-box;
