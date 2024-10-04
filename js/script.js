@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       if (windowCenter >= scrollOffset) {
         el.classList.add('animation-class');
       } else {
-        el.classList.remove('animation-class');
+        // el.classList.remove('animation-class');
       }
     });
   };
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       if (windowCenter >= scrollOffset) {
         el.classList.add('animation-class');
       } else {
-        el.classList.remove('animation-class');
+        // el.classList.remove('animation-class');
       }
     });
     }
